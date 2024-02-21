@@ -16,3 +16,41 @@ var famous_person = 'Quaid e Azam';
 var quote = 'With faith, discipline and selfless devotion to duty, there is nothing worthwhile that you cannot achieve';
 var message = "".concat(famous_person, " once said, \"").concat(quote, "\"");
 console.log(message);
+//6- Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name.
+// Make sure you use each character combination, "\t" and "\n", at least once. Print the name once,
+// so the whitespace around the name is displayed. Then print the name after striping the white spaces
+var whitespace_name = '\t Sabeh \n';
+console.log("Whitespace character: ".concat(whitespace_name));
+var striped_name = whitespace_name.trim();
+console.log("Name after striping: ".concat(striped_name));
+// 7- Number Eight: Write addition, subtraction, multiplication, and division operations that each result
+//  in the number 8. Be sure to enclose your operations in print statements to see the results.
+var add_numone = 5;
+var add_numtwo = 3;
+var add_result = add_numone + add_numtwo;
+console.log("Addition of ".concat(add_numone, " + ").concat(add_numtwo, " is ").concat(add_result));
+var sub_numone = 11;
+var sub_numtwo = 3;
+var sub_result = sub_numone - sub_numtwo;
+console.log("Subtraction of ".concat(sub_numone, " - ").concat(sub_numtwo, " is ").concat(sub_result));
+var mul_one = 2;
+var mul_two = 4;
+var mul_result = mul_one * mul_two;
+console.log("Multiplication of ".concat(mul_one, " * ").concat(mul_two, " is ").concat(mul_result));
+var div_one = 16;
+var div_two = 2;
+var div_result = div_one / div_two;
+console.log("Division of ".concat(div_one, " / ").concat(div_two, " is ").concat(div_result));
+// 9- Favorite Number: Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message
+var fave_num = 15;
+console.log("Favorite number: ".concat(fave_num));
+// 10-Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. 
+// If you don’t have anything specific to write because your programs are too simple at this point, just add 
+// name and the current date at the top of each program file. Then write one sentence describing what the program does.
+// Define the length and width of the rectangle
+var length = 5;
+var width = 3;
+// Calculate the area of the rectangle
+var area = length * width;
+// Print the calculated area
+console.log("The area of the rectangle with length ".concat(length, " and width ").concat(width, " is ").concat(area, "."));
