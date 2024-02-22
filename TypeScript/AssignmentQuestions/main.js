@@ -1,6 +1,6 @@
 // 2- Personal Message: Store a person’s name in a variable, and print a message to that person. 
 // Your message should be simple, such as, “Hello Eric, would you like to learn some Python today?”
-var person_name = 'Sabeh is a boy';
+var person_name = 'Sabeh is a boy'; // Added type annotation
 console.log("Hello ".concat(person_name, ", Would you like to learn some Python today?"));
 // 3- Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.
 console.log("In UpperCase ".concat(person_name.toUpperCase()));
@@ -47,10 +47,7 @@ console.log("Favorite number: ".concat(fave_num));
 // 10-Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. 
 // If you don’t have anything specific to write because your programs are too simple at this point, just add 
 // name and the current date at the top of each program file. Then write one sentence describing what the program does.
-// Define the length and width of the rectangle
-var length = 5;
+var reclength = 5;
 var width = 3;
-// Calculate the area of the rectangle
-var area = length * width;
-// Print the calculated area
-console.log("The area of the rectangle with length ".concat(length, " and width ").concat(width, " is ").concat(area, "."));
+var area = reclength * width;
+console.log("The area of the rectangle with length ".concat(reclength, " and width ").concat(width, " is ").concat(area, "."));
