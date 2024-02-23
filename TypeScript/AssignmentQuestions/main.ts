@@ -8,6 +8,7 @@ console.log(`Hello ${person_name}, Would you like to learn some Python today?`);
 console.log(`In UpperCase ${person_name.toUpperCase()}`);
 console.log(`In LowerCase ${person_name.toLowerCase()}`);
 
+
 // 4- Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author.
 //  Your output should look something like the following, including the quotation marks:
 // Albert Einstein once said, “A person who never made a mistake never tried anything new.”
@@ -69,3 +70,38 @@ let width: number = 3;
 let area: number = reclength * width;
 
 console.log(`The area of the rectangle with length ${reclength} and width ${width} is ${area}.`);
+
+
+// 11- Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.
+
+let names: string[] = ['Sabeh', 'Ronaldo', 'Messi', 'Mbappe']
+
+for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
+
+// 12- Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them.
+//  The text of each message should be the same, but each message should be personalized with the person’s name.
+
+for (let i = 0; i < names.length; i++) {
+    console.log(`Hello ${names[i]} How are you?`);
+}
+
+// 13- Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples.
+// Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
+
+let transportation: string[] = ['motorcycle', 'car', 'bus', 'train'];
+
+for (let i = 0; i < transportation.length; i++) {
+    console.log(`I would like to own a ${transportation[i]}`);
+}
+
+// 14- Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes
+// at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
+
+let guestList: string[] = ['Papa', 'Mama', 'Brothers', 'Babar Azam']
+
+for (let i = 0; i < guestList.length; i++) {
+    console.log(`${guestList[i]}, Would you like to come for dinner tonight?`);
+    
+}
