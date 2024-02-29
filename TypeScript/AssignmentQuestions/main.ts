@@ -159,3 +159,42 @@ for (let i = 0; i < guestList.length; i++) {
 }
 guestList.splice(0, 2)
 console.log(guestList)
+
+// 19-Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
+console.log(`Number of people invited to dinner are: ${guestList.length}`)
+
+
+// 18-Seeing the World: Think of at least five places in the world you’d like to visit.
+// • Store the locations in a array. Make sure the array is not in alphabetical order.
+
+let five_stadiums: string[] = ['Emirates Stadium', 'Santiago Bernabéu', 'Allianz Arena', 'King Fahd Stadium', 'Old Trafford'];
+
+// Print your array in its original order.
+console.log(`Original order: ${five_stadiums}`);
+
+// • Print your array in alphabetical order without modifying the actual list.
+console.log(`Alphabetical order without modifying list: ${[...five_stadiums].sort()}`); // made copy without modifying actual array
+
+// • Show that your array is still in its original order by printing it.
+console.log(`Still In Original order: ${five_stadiums}`);
+
+// • Print your array in reverse alphabetical order without changing the order of the original list.
+console.log(`Reverse alphabetical order: ${[...five_stadiums].sort().reverse()}`);
+
+// • Show that your array is still in its original order by printing it again.
+console.log(`Still In Original order: ${five_stadiums}`);
+
+// • Reverse the order of your list. Print the array to show that its order has changed.
+console.log(`Reverse order: ${five_stadiums.reverse()}`);
+
+// • Reverse the order of your list again. Print the list to show it’s back to its original order.
+console.log(`Back to original order: ${five_stadiums.reverse()}`);
+
+// • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
+console.log(`Alphabetical order with modifying list: ${five_stadiums.sort()}`);
+
+// • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
+console.log(`Reverse alphabetical order again: ${[...five_stadiums].sort().reverse()}`);
+
+
+
