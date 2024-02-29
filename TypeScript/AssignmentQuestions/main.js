@@ -132,3 +132,17 @@ console.log(`Back to original order: ${five_stadiums.reverse()}`);
 console.log(`Alphabetical order with modifying list: ${five_stadiums.sort()}`);
 // • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
 console.log(`Reverse alphabetical order again: ${[...five_stadiums].sort().reverse()}`);
+// 20- Think of something you could store in a array. For example, you could make a list of
+//  mountains, rivers, countries, cities, languages, or anything else you’d like.
+//  Write a program that creates a list containing these items.
+const mountains = ["Mount Everest", "K2", "Kangchenjunga", "Lhotse", "Makalu"];
+const rivers = ["Nile", "Amazon", "Yangtze", "Mississippi-Missouri-Red-Arkansas", "Ob-Irtysh"];
+const countries = ["Japan", "Canada", "Brazil", "Australia", "Nigeria"];
+const cities = ["Tokyo", "Toronto", "Rio de Janeiro", "Sydney", "Lagos"];
+const languages = ["English", "Mandarin Chinese", "Spanish", "Hindi", "Arabic"];
+// Print the contents of each array
+console.log("Mountains:", mountains);
+console.log("Rivers:", rivers);
+console.log("Countries:", countries);
+console.log("Cities:", cities);
+console.log("Languages:", languages);
