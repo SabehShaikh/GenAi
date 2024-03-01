@@ -136,13 +136,26 @@ console.log(`Reverse alphabetical order again: ${[...five_stadiums].sort().rever
 //  mountains, rivers, countries, cities, languages, or anything else you’d like.
 //  Write a program that creates a list containing these items.
 const mountains = ["Mount Everest", "K2", "Kangchenjunga", "Lhotse", "Makalu"];
-const rivers = ["Nile", "Amazon", "Yangtze", "Mississippi-Missouri-Red-Arkansas", "Ob-Irtysh"];
-const countries = ["Japan", "Canada", "Brazil", "Australia", "Nigeria"];
-const cities = ["Tokyo", "Toronto", "Rio de Janeiro", "Sydney", "Lagos"];
-const languages = ["English", "Mandarin Chinese", "Spanish", "Hindi", "Arabic"];
-// Print the contents of each array
+const rivers = ["Nile", "Amazon", "Yangtze", "Mississippi", "Danube"];
+const countries = ["Japan", "Palestine", "Germany", "Australia", "Russia"];
+const cities = ["Tokyo", "Jerusalem", "Berlin", "Sydney", "Moscow"];
+const languages = ["English", "Mandarin Chinese", "Spanish", "Urdu", "Arabic"];
 console.log("Mountains:", mountains);
 console.log("Rivers:", rivers);
 console.log("Countries:", countries);
 console.log("Cities:", cities);
 console.log("Languages:", languages);
+let footballer = {
+    name: 'Cristiano Ronaldo',
+    position: 'Forward',
+    nationality: 'Portuguese',
+    age: 39,
+    club: 'Al-Nassr'
+};
+console.log(footballer);
+// 22-Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen.
+let myArr = ['One', 'Two', 'Three', 'Four'];
+// Accessing an index that doesn't exist, will print undefined
+console.log(myArr[5]);
+//Make sure you correct the error before closing the program.
+console.log(myArr);
