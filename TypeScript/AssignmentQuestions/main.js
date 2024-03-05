@@ -159,3 +159,38 @@ let myArr = ['One', 'Two', 'Three', 'Four'];
 console.log(myArr[5]);
 //Make sure you correct the error before closing the program.
 console.log(myArr);
+// 23-Conditional Tests:
+//  Write a series of conditional tests.
+let car = 'subaru';
+// test 1
+console.log("Is car == 'subaru'? I predict True.");
+console.log(car == 'subaru'); // True
+// test 2
+console.log("Is car == 'honda'? I predict False.");
+console.log(car == 'honda'); // False
+// test 3
+console.log("Is car != 'toyota'? I predict True.");
+console.log(car != 'toyota'); // True
+// test 4
+console.log("Is car === 'toyota'? I predict True.");
+console.log(car === 'toyota'); // false
+// test 5
+console.log("Is car.charAt(0) == 's'? I predict True.");
+console.log(car.charAt(0) == 's'); // True
+// test 6
+console.log("Is car !== 'subaru'? I predict False.");
+console.log(car !== 'subaru'); // False
+// test 7
+console.log("Is car.length == 6? I predict True.");
+console.log(car.length == 6); // True
+// test 8
+console.log("Is car.length == 5? I predict True.");
+console.log(car.length == 5); // false
+// test 9
+console.log("Is car.toUpperCase() == 'SUBARU'? I predict True.");
+console.log(car.toUpperCase() == 'SUBARU'); // True
+// test 10
+console.log("Is car == 'Tesla'? I predict False.");
+console.log(car == 'Tesla'); // False
+// 24- More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try 
+// more comparisons, write more tests. Have at least one True and one False result for each of the following:
