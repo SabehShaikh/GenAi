@@ -126,3 +126,44 @@ if (favorite_fruits.includes('kiwi')) {
     console.log(`I really like kiwi`)
 }
 
+// 30-Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user:
+
+let usernames: string[] = ['admin', 'RonaldoFan7', 'MessiMagic10', 'NeymarJr11', 'MbappeSpeed', 'Beckham23'];
+// for (let i = 0; i < usernames.length; i++) {
+//     // • If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?
+//     if (usernames[i] === 'admin') {
+//         console.log(`Hello admin, would you like to see status report?`);
+
+//     }
+//     // • Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
+//     else {
+//         console.log(`Hello  ${usernames[i]} , thank you for logging in again.`)
+//     }
+// }
+// Another way -- ForEach() Loop:
+usernames.forEach(username => {
+    if (username === 'admin') {
+        console.log(`Hello admin, would you like to see status report?`);
+    } else {
+        console.log(`Hello ${username}, thank you for logging in again.`);
+    }
+});
+// Another way -- For of() Loop:
+// for (const username of usernames) {
+//     if (username === 'admin') {
+//         console.log(`Hello admin, would you like to see status report?`);
+//     } else {
+//         console.log(`Hello ${username}, thank you for logging in again.`);
+//     }
+// }
+
+
+// 31-No Users: Add an if test to Exercise 30 to make sure the list of users is not empty.
+
+// let usernames: string[] = ['admin', 'RonaldoFan7', 'MessiMagic10', 'NeymarJr11', 'MbappeSpeed', 'Beckham23'];
+if (usernames.length === 0) {
+    console.log(`We need to find some users!`);
+} else {
+    usernames = [];
+    console.log(`All users removed: [${usernames}] , ${usernames.length}`);
+}
