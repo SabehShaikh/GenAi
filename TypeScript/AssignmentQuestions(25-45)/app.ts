@@ -272,3 +272,29 @@ makeshirt()
 makeshirt('Medium')
 // and a shirt of any size with a different message.
 makeshirt('Small', 'I can wear any size')
+
+// 38-Cities: Write a function called describe_city() that accepts the name of a city and its country.
+const describe_city = (city: string, country: string = 'Pakistan'): void => {
+    console.log(`${city} is in ${country}`)
+}
+//  The function should print a simple sentence, such as Karachi is in Pakistan.
+describe_city('Karachi')
+
+// Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default country.
+describe_city('Lahore')
+describe_city('Islamabad')
+describe_city('Riyadh')
+
+// 39-City Names: Write a function called city_country() that takes in the name of a city and its country.
+//  The function should return a string formatted like this:"Lahore, Pakistan"
+
+const city_country = (city: string, country: string): string => {
+    return `${city}, ${country}`;
+}
+
+// Call your function with at least three city-country pairs, and print the value that’s returned.
+console.log(city_country("Lahore", "Pakistan"));
+console.log(city_country("Dubai", "UAE"));
+console.log(city_country("Berlin", "Germany"));
+console.log(city_country("London", "United Kingdom"));
+
