@@ -210,3 +210,34 @@ myNumbers.forEach((num) => {
 //     }
 //     console.log(`${i}${ordinalNumber}`);
 // }
+// 34-Pizzas: Think of at least three kinds of your favorite pizza. Store these pizza names in a array, and then use a for loop to print the name of each pizza.
+let Pizzas = ['Chicken Tikka', 'Afghani', 'Pepperoni', 'Fajita'];
+// • Modify your for loop to print a sentence using the name of the pizza instead of printing just the name of the pizza. For each pizza you should have one line of output containing a simple statement like I like pepperoni pizza.
+for (let i = 0; i < Pizzas.length; i++) {
+    console.log(`I like ${Pizzas[i]} pizza.`);
+}
+// • Add a line at the end of your program, outside the for loop, that states how much you like pizza. The output should consist of three or more lines about the kinds of pizza you like and then an additional sentence, such as I really love pizza!
+console.log(`I really love pizza! Whether it's ${Pizzas.join(', ')} or any flavour I enjoy eating it.`);
+// 35-Animals: Think of at least three different animals that have a common characteristic. Store the names of these animals in a list, and then use a for loop to print out the name of each animal. • Modify your program to print a statement about each animal, 
+// such as A dog would make a great pet. • Add a line at the end of your program stating what these animals have in common. You could print a sentence such as Any of these animals would make a great pet!
+let Animals = ['Cow', 'Goat', 'Sheep'];
+for (let i = 0; i < Animals.length; i++) {
+    console.log(`${Animals[i]} would make a great pet.`);
+}
+console.log(`These animals are domesticated livestock, they provide us with dairy products.\nAny of them would make a great pet!`);
+// 36-T-Shirt: Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt.
+function make_shirt(size, message) {
+    console.log(`You have ordered a ${size} T-shirt with the following message: "${message}"`);
+}
+// The function should print a sentence summarizing the size of the shirt and the message printed on it. Call the function.
+make_shirt('Medium', 'I love Programming!');
+// 37-Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript.
+const makeshirt = (size = 'Large', message = 'I love Typescript') => {
+    console.log(`You have ordered a ${size} T-shirt with the following message: "${message}"`);
+};
+// Make a large shirt
+makeshirt();
+// and a medium shirt with the default message
+makeshirt('Medium');
+// and a shirt of any size with a different message.
+makeshirt('Small', 'I can wear any size');
