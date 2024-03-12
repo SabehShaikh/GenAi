@@ -261,3 +261,24 @@ console.log(city_country("Lahore", "Pakistan"));
 console.log(city_country("Dubai", "UAE"));
 console.log(city_country("Berlin", "Germany"));
 console.log(city_country("London", "United Kingdom"));
+// 40- Album:
+//  Use the function to make three dictionaries representing different albums. 
+//  Print each return value to show that Objects are storing the album information correctly.
+//   Add an optional parameter to make_album() that allows you to store the number of tracks on an album. 
+// Write a function called make_album()
+// The function should take in an artist name and an album title, and it should return a Object containing these two pieces of information. 
+const make_album = (artist_name, title, tracks) => {
+    const album = {
+        artist_name: artist_name,
+        title: title,
+    };
+    //   If the calling line includes a value for the number of tracks, add that value to the album’s Object
+    if (tracks !== undefined) {
+        album.tracks = tracks;
+    }
+    return album;
+};
+//  Make at least one new function call that includes the number of tracks on an album.
+console.log(make_album('Artist One', 'Album One'));
+const album1 = make_album("Artist Two", 'Album Two', 6);
+console.log(album1);
