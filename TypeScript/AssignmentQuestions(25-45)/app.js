@@ -282,3 +282,25 @@ const make_album = (artist_name, title, tracks) => {
 console.log(make_album('Artist One', 'Album One'));
 const album1 = make_album("Artist Two", 'Album Two', 6);
 console.log(album1);
+// Q-41: Define an array of magician’s names.
+let Magicians_names = ['David Copperfield', 'Harry Houdini', 'Penn Jillette', 'Teller'];
+// Define a function called show_magicians that takes an array of magician names as a parameter.
+const show_magicians = (Magicians) => {
+    // Iterate over each magician name in the array and print it.
+    Magicians.forEach(element => {
+        console.log(`Magician: ${element}`);
+    });
+};
+show_magicians(Magicians_names);
+// 42- Great Magicians: Start with a copy of your program from Exercise 41.
+// Define a function called make_great that modifies the array of magician names by adding "the Great" to each name.
+const make_great = (Magicians) => {
+    // Modify each magician's name in the array by adding "the Great" to it.
+    Magicians.forEach((magician, index) => {
+        Magicians[index] = `The Great ${magician}`;
+    });
+};
+// Call the make_great function to modify the array of magician names.
+make_great(Magicians_names);
+// Call the show_magicians function to display the modified list of magicians.
+show_magicians(Magicians_names);
