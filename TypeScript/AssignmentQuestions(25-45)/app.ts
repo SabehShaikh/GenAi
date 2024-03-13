@@ -355,3 +355,76 @@ const make_great = (Magicians: string[]): void => {
 make_great(Magicians_names);
 // Call the show_magicians function to display the modified list of magicians.
 show_magicians(Magicians_names);
+
+// 43- Unchanged Magicians: Start with your work from Exercise 42. 
+// Call the function make_great() with a copy of the array of magicians’ names.
+//  Because the original array will be unchanged, return the new array and store it in a separate array.
+const make_great1 = (Magicians: string[]): string[] => {
+    const modifiedMagicians: string[] = [];
+
+    Magicians.forEach((magician) => {
+        modifiedMagicians.push(`The Great ${magician}`);
+    });
+    // Return the modified array.
+    return modifiedMagicians;
+}
+
+// Call the make_great function with a copy of the array of magicians’ names.
+const modifiedArray = make_great1([...Magicians_names]);
+// Call show_magicians() with each array to show that you have one array of the original names and one array with the Great added to each magician’s name.
+show_magicians(Magicians_names);
+show_magicians(modifiedArray);
+
+
+// 44- Sandwiches:
+// The function should have one parameter that collects as many items as the function call provides,
+//  and it should print a summary of the sandwich that is being ordered. 
+// Write a function that accepts a array of items a person wants on a sandwich. 
+const orderSandwich = (...items: string[]): void => {
+    // Check if there are any items provided.
+    if (items.length === 0) {
+        console.log("You ordered an empty sandwich!");
+    } else {
+        const sandwichSummary = items.join(', ');
+        console.log(`You ordered a sandwich with: ${sandwichSummary}`);
+    }
+}
+//  Call the function three times, using a different number of arguments each time.s.
+orderSandwich('Cheese', 'Tomato', 'Lettuce');
+orderSandwich('Ham', 'Mustard');
+orderSandwich('Peanut Butter', 'Jelly', 'Bread');
+
+// 45- Cars: Write a function that stores information about a car in a Object.
+//  The function should always receive a manufacturer and a model name. It should then accept an
+//   arbitrary number of keyword arguments. Call the function with the required information and 
+//   two other name-value pairs, such as a color or an optional feature. 
+//   Print the Object that’s returned to make sure all the information was stored correctly.
+
+const CarInfo = (manufacturer: string, model_name: string, color?: string, ...options: any[]) => {
+    const Car: {
+        manufacturer: string,
+        model_name: string,
+        color?: string,
+        [key: string]: any
+    } = {
+        manufacturer: manufacturer,
+        model_name: model_name,
+    }
+
+    if (color !== undefined) {
+        Car.color = color;
+    }
+
+    // Loop through options and assign them to Car object
+    for (let i = 0; i < options.length; i += 2) {
+        const key = options[i];
+        const value = options[i + 1];
+        Car[key] = value;
+    }
+
+    return Car;
+}
+
+const vehicle = CarInfo('Toyota', 'Civic', 'Red', 'year', 2022);
+console.log(vehicle);
+
