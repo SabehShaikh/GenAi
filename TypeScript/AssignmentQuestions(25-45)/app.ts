@@ -126,7 +126,8 @@ if (favorite_fruits.includes('kiwi')) {
     console.log(`I really like kiwi`)
 }
 
-// 30-Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user:
+// 30-Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log
+//  in to a website. Loop through the array, and print a greeting to each user:
 
 let usernames: string[] = ['admin', 'RonaldoFan7', 'MessiMagic10', 'NeymarJr11', 'MbappeSpeed', 'Beckham23'];
 // for (let i = 0; i < usernames.length; i++) {
