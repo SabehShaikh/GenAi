@@ -7,6 +7,8 @@ console.log(`Hello ${person_name}, Would you like to learn some Python today?`);
 // 3- Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.
 console.log(`In UpperCase ${person_name.toUpperCase()}`);
 console.log(`In LowerCase ${person_name.toLowerCase()}`);
+console.log(`In TitleCase ${person_name.split(/\s+/).map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ')}`);
+
 
 
 // 4- Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author.
@@ -65,6 +67,8 @@ console.log(`Favorite number: ${fave_num}`);
 // If you don’t have anything specific to write because your programs are too simple at this point, just add 
 // name and the current date at the top of each program file. Then write one sentence describing what the program does.
 
+// Sabeh, this program determines area of the rectangle:
+
 let reclength: number = 5;
 let width: number = 3;
 let area: number = reclength * width;
@@ -113,8 +117,9 @@ for (let i = 0; i < guestList.length; i++) {
 let unavailable_Guest: string = 'Haris'
 let new_Guest: string = 'Mohammad Rizwan'
 
+guestList[guestList.indexOf(unavailable_Guest)] = new_Guest
 
-guestList[4] = new_Guest
+// guestList[4] = new_Guest
 
 for (let i = 0; i < guestList.length; i++) {
     console.log(`Changed GuestList: ${guestList[i]}, Would you like to come for dinner tonight?`);
@@ -331,5 +336,9 @@ console.log(squad_players.includes('Saka'));
 // Test whether an item is not in an array
 console.log(`Is 'Benzema' in the array?`);
 console.log(squad_players.includes('Benzema'));
+
+
+
+
 
 

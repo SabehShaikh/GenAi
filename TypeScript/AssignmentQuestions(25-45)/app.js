@@ -117,7 +117,8 @@ if (favorite_fruits.includes('banana')) {
 if (favorite_fruits.includes('kiwi')) {
     console.log(`I really like kiwi`);
 }
-// 30-Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user:
+// 30-Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log
+//  in to a website. Loop through the array, and print a greeting to each user:
 let usernames = ['admin', 'RonaldoFan7', 'MessiMagic10', 'NeymarJr11', 'MbappeSpeed', 'Beckham23'];
 // for (let i = 0; i < usernames.length; i++) {
 //     // • If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?
@@ -250,7 +251,7 @@ describe_city('Karachi');
 // Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default country.
 describe_city('Lahore');
 describe_city('Islamabad');
-describe_city('Riyadh');
+describe_city('Riyadh', 'Saudia Arabia');
 // 39-City Names: Write a function called city_country() that takes in the name of a city and its country.
 //  The function should return a string formatted like this:"Lahore, Pakistan"
 const city_country = (city, country) => {

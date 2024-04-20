@@ -1,12 +1,12 @@
 "use strict";
 // 2- Personal Message: Store a person’s name in a variable, and print a message to that person. 
 // Your message should be simple, such as, “Hello Eric, would you like to learn some Python today?”
-Object.defineProperty(exports, "__esModule", { value: true });
 let person_name = 'Sabeh is a boy'; // Added type annotation
 console.log(`Hello ${person_name}, Would you like to learn some Python today?`);
 // 3- Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.
 console.log(`In UpperCase ${person_name.toUpperCase()}`);
 console.log(`In LowerCase ${person_name.toLowerCase()}`);
+console.log(`In TitleCase ${person_name.split(/\s+/).map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ')}`);
 // 4- Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author.
 //  Your output should look something like the following, including the quotation marks:
 // Albert Einstein once said, “A person who never made a mistake never tried anything new.”
@@ -49,6 +49,7 @@ console.log(`Favorite number: ${fave_num}`);
 // 10-Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. 
 // If you don’t have anything specific to write because your programs are too simple at this point, just add 
 // name and the current date at the top of each program file. Then write one sentence describing what the program does.
+// Sabeh, this program determines area of the rectangle:
 let reclength = 5;
 let width = 3;
 let area = reclength * width;
@@ -79,7 +80,8 @@ for (let i = 0; i < guestList.length; i++) {
 // You’ll have to think of someone else to invite.
 let unavailable_Guest = 'Haris';
 let new_Guest = 'Mohammad Rizwan';
-guestList[4] = new_Guest;
+guestList[guestList.indexOf(unavailable_Guest)] = new_Guest;
+// guestList[4] = new_Guest
 for (let i = 0; i < guestList.length; i++) {
     console.log(`Changed GuestList: ${guestList[i]}, Would you like to come for dinner tonight?`);
 }
