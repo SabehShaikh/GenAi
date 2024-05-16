@@ -1,0 +1,40 @@
+Start of Execution:
+When your JavaScript program starts running, it initializes the main thread and starts executing code line by line.
+
+The main thread includes the call stack, which keeps track of the currently executing function or code block.
+
+
+Synchronous Code Execution:
+Synchronous code, like your console.log("Start") and console.log("End"), is executed sequentially in the order it appears in your code.
+
+These statements are pushed onto the call stack and executed one after the other.
+
+
+Asynchronous Operation Encountered (setTimeout):
+
+When the JavaScript engine encounters an asynchronous operation, such as setTimeout, it delegates the handling of that operation to the browser's or Node.js's runtime environment.
+In the case of setTimeout, the callback function is scheduled to run after a minimum delay, even if that delay is 0 milliseconds.
+
+Task Queue and Event Loop:
+
+After the specified delay, the callback function of setTimeout is not immediately executed. Instead, it is placed in the task queue.
+The task queue holds callback functions and events that are ready to be executed.
+The event loop is a mechanism that continuously checks if the call stack is empty and if there are tasks in the task queue.
+
+Empty Call Stack Check:
+
+After executing "End", the call stack becomes empty because there are no more synchronous tasks to execute.
+The event loop then checks if the call stack is empty and if there are tasks in the task queue.
+
+Task Execution from Task Queue:
+
+Since there is a task (the setTimeout callback) in the task queue and the call stack is empty, the event loop takes the callback function from the task queue.
+The callback function is pushed onto the call stack for execution.
+
+Execution of setTimeout Callback:
+
+The console.log("Inside setTimeout callback") statement inside the callback function is executed, logging "Inside setTimeout callback" to the console.
+Completion and Cleanup:
+
+After executing the callback, the call stack becomes empty again.
+The event loop continues this process, checking for tasks in the task queue and executing them when the call stack is empty.
