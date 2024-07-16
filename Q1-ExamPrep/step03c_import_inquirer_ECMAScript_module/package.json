@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "inquirer": "^10.0.1"
+  },
+  "name": "step03c_import_inquirer_ecmascript_module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

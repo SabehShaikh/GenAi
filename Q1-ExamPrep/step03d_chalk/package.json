@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "inquirer": "^10.0.1"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  },
+  "name": "step03d_chalk",
+  "description": "The latest version of [Inquirer](https://github.com/SBoudrias/Inquirer.js/)(9+) and [Chalk](https://github.com/chalk/chalk)(5+) have started using Native ECMA Script Packages.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
