@@ -7,8 +7,11 @@ const c = "best";
 //because let has blocked scope
 if (true) {
   let z = 4;
-  console.log(z);
+  // console.log(z);
 } else {
   let z = "string";
 }
+
 console.log("let: " + z); // Error: z is not defined in this scope
+
+

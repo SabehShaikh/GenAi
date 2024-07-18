@@ -9,8 +9,10 @@ let answers = await inquirer.prompt([
   },
 ]);
 
-console.log(
-  chalk.greenBright(
-    "Insha Allah, in " + (60 - answers.age) + " years you will be 60 years old."
-  )
-);
+// console.log(
+//   chalk.greenBright(
+//     "Insha Allah, in " + (60 - answers.age) + " years you will be 60 years old."
+//   )
+// );
+
+console.log(chalk.bgCyanBright('Hello World'))
