@@ -55,7 +55,39 @@ function drying() {
         }, 2000);
     });
 }
-washing().then((value) => {
-    console.log(value);
-});
+// washing()
+//   .then((value) => {
+//     console.log(value);
+//     return soaking();
+//   })
+//   .then((value) => {
+//     console.log(value);
+//     return drying();
+//   })
+//   .then((value) => {
+//     console.log(value);
+//   })
+//   .catch((error) => {
+//     console.error("Error:", error);
+//   });
+// with async await now:
+async function runWashingMachine() {
+    try {
+        // return value ko store krna hota...
+        const resultOne = await washing();
+        console.log(resultOne);
+        const resultTwo = await soaking();
+        console.log(resultTwo);
+        const resultThree = await drying();
+        console.log(resultThree);
+    }
+    catch (error) {
+        console.error("Error:", error);
+    }
+    finally {
+        console.log("Process completed");
+    }
+}
+// finally will run anyway (just like .finally())
+runWashingMachine();
 export {};

@@ -6,6 +6,7 @@ const returnMoney = new Promise((resolve, reject) => {
 
 // resolve --> .then
 // reject --> .catch
+// finally --> chlna hi chlna ha code.
 
 returnMoney
   .then((value) => {
@@ -14,4 +15,7 @@ returnMoney
   })
   .catch((error) => {
     console.log("Sorry i am not able to return the money");
+  })
+  .finally(() => {
+    console.log("Process completed");
   });
