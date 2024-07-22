@@ -1,0 +1,13 @@
+{
+  "name": "concurrency(multi-tasking)",
+  "version": "1.0.0",
+  "description": "Concurrency allows us to manage multiple tasks at once, improving the efficiency and performance of applications, especially for I/O-bound tasks like reading files, making network requests, or interacting with databases.",
+  "main": "async.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
