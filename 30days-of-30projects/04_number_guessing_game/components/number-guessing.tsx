@@ -6,10 +6,12 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 
 export default function NumberGuessing(): JSX.Element {
-  // State Definition:
-
-  // Defines the structure of the state for a number guessing game.
-  interface NumberGuessingState {
+    // State Definition:
+    
+    // Defines the structure of the state for a number guessing game.
+    
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    interface NumberGuessingState {
     // indicating if the game has started.
     gameStarted: boolean;
 
