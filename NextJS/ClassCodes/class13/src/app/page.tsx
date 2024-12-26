@@ -10,9 +10,20 @@ export default function Home() {
   // third ==> dependency
 
   // runs after every render if no dependency array is provided.
+
+  // useEffect(() => {
+  //   alert("i will run on every render");
+  // });
+
+  // runs only on first render
+  // useEffect(() => {
+  //   alert("i will run on first render");
+  // }, []);
+
+  // runs on first render and when count changes
   useEffect(() => {
-    alert("i will run on every render");
-  });
+    alert("i will run on first render and when count changes");
+  }, [count]);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
