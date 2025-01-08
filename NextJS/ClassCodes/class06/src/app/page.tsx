@@ -14,14 +14,15 @@ export default function Home() {
           Contact US
         </button>
       </div>
+
       <div className="w-1/2 flex justify-center ">
-          <Image
-            className="w-[502px] h-[465px]"
-            src={"/images/bg-image.jfif"}
-            alt="image"
-            width={502}
-            height={465}
-          />
+        <Image
+          className="w-[502px] h-[465px]"
+          src={"/images/bg-image.jfif"}
+          alt="image"
+          width={502}
+          height={465}
+        />
       </div>
     </div>
   );
